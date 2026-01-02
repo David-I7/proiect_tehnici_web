@@ -1,0 +1,22 @@
+Task schema cromatica:
+
+Task layout:
+
+Task design rudimentar:
+a. (media query index.scss)
+b. grid gap
+c. izolare header,footer,zone grid
+d. padding inauntul
+e.
+
+Task iconuri:
+
+Task stilizare tabel:
+
+Task stilizare-taburi:
+
+Task Link top:
+
+
+Bonusuri:
+1. css reset
