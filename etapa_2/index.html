@@ -5,7 +5,7 @@
     <!-- Fara acesta, media query-urile nu ar functiona -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <meta name="author" content="Iosub David" />
+    <meta name="author" content="eSHOP" />
     <meta
       name="description"
       content="Ai libertatea sa alegi din sute de produse IT precum laptop-uri, telefoane mobile, tablete si gadget-uri la Super Pret. Livram rapid oriunde in tara si ai drept de retur gratuit timp de 30 zile"
@@ -15,14 +15,14 @@
       content="electronice, smartwatch, telefoane, laptopuri, calculatoare, wearables, gadgets, smartring"
     />
     <title>eSHOP</title>
+
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
       href="resurse/ico/favicon-96x96.png"
       sizes="96x96"
     />
-    <link rel="stylesheet" href="resurse/styles/css/index.css" />
-    <link rel="stylesheet" href="resurse/styles/css/home.css" />
     <link rel="icon" type="image/svg+xml" href="resurse/ico/favicon.svg" />
     <link rel="shortcut icon" href="resurse/ico/favicon.ico" />
     <link
@@ -32,12 +32,23 @@
     />
     <meta name="apple-mobile-web-app-title" content="eSHOP" />
     <link rel="manifest" href="resurse/ico/site.webmanifest" />
+
+    <!-- FONTS -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..600;1,14..32,400..600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- STYLESHEETS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="resurse/styles/css/index.css" />
+    <link rel="stylesheet" href="resurse/styles/css/home.css" />
   </head>
   <body>
     <header>
@@ -57,43 +68,13 @@
       <nav aria-label="primary">
         <input type="search" name="query" placeholder="Search" />
         <button aria-label="Contul meu">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M8 7C8 5.93913 8.42143 4.92172 9.17157 4.17157C9.92172 3.42143 10.9391 3 12 3C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7C16 8.06087 15.5786 9.07828 14.8284 9.82843C14.0783 10.5786 13.0609 11 12 11C10.9391 11 9.92172 10.5786 9.17157 9.82843C8.42143 9.07828 8 8.06087 8 7ZM8 13C6.67392 13 5.40215 13.5268 4.46447 14.4645C3.52678 15.4021 3 16.6739 3 18C3 18.7956 3.31607 19.5587 3.87868 20.1213C4.44129 20.6839 5.20435 21 6 21H18C18.7956 21 19.5587 20.6839 20.1213 20.1213C20.6839 19.5587 21 18.7956 21 18C21 16.6739 20.4732 15.4021 19.5355 14.4645C18.5979 13.5268 17.3261 13 16 13H8Z"
-            />
-          </svg>
+          <span class="fa-solid fa-user fa-lg"></span>
         </button>
         <button aria-label="Favorite">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
-            />
-          </svg>
+          <span class="fa-solid fa-heart fa-lg"></span>
         </button>
         <button aria-label="Cosul meu">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8.00922 22C7.45922 22 6.98855 21.8043 6.59722 21.413C6.20588 21.0217 6.00988 20.5507 6.00922 20C6.00855 19.4493 6.20455 18.9787 6.59722 18.588C6.98988 18.1973 7.46055 18.0013 8.00922 18C8.55788 17.9987 9.02888 18.1947 9.42222 18.588C9.81555 18.9813 10.0112 19.452 10.0092 20C10.0072 20.548 9.81155 21.019 9.42222 21.413C9.03288 21.807 8.56188 22.0027 8.00922 22ZM18.0092 22C17.4592 22 16.9886 21.8043 16.5972 21.413C16.2059 21.0217 16.0099 20.5507 16.0092 20C16.0085 19.4493 16.2045 18.9787 16.5972 18.588C16.9899 18.1973 17.4605 18.0013 18.0092 18C18.5579 17.9987 19.0289 18.1947 19.4222 18.588C19.8155 18.9813 20.0112 19.452 20.0092 20C20.0072 20.548 19.8116 21.019 19.4222 21.413C19.0329 21.807 18.5619 22.0027 18.0092 22ZM6.20922 4H20.9592C21.3426 4 21.6342 4.171 21.8342 4.513C22.0342 4.855 22.0425 5.20067 21.8592 5.55L18.3092 11.95C18.1259 12.2833 17.8802 12.5417 17.5722 12.725C17.2642 12.9083 16.9265 13 16.5592 13H9.10922L8.00922 15H20.0092V17H8.00922C7.25922 17 6.69255 16.671 6.30922 16.013C5.92588 15.355 5.90922 14.7007 6.25922 14.05L7.60922 11.6L4.00922 4H2.00922V2H5.25922L6.20922 4Z"
-            />
-          </svg>
+          <span class="fa-solid fa-cart-shopping fa-lg"></span>
         </button>
       </nav>
       <nav aria-label="secondary">
@@ -177,32 +158,13 @@
             ></meter>
             <div>100% recomanda produsul acesta</div>
             <button title="Adauga la favorite" aria-label="Adauga la favorite">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
-                />
-              </svg>
+              <span class="fa-solid fa-heart fa-lg"></span>
             </button>
             <button
               title="Adauga in cosul meu"
               aria-label="Adauga in cosul meu"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.00922 22C7.45922 22 6.98855 21.8043 6.59722 21.413C6.20588 21.0217 6.00988 20.5507 6.00922 20C6.00855 19.4493 6.20455 18.9787 6.59722 18.588C6.98988 18.1973 7.46055 18.0013 8.00922 18C8.55788 17.9987 9.02888 18.1947 9.42222 18.588C9.81555 18.9813 10.0112 19.452 10.0092 20C10.0072 20.548 9.81155 21.019 9.42222 21.413C9.03288 21.807 8.56188 22.0027 8.00922 22ZM18.0092 22C17.4592 22 16.9886 21.8043 16.5972 21.413C16.2059 21.0217 16.0099 20.5507 16.0092 20C16.0085 19.4493 16.2045 18.9787 16.5972 18.588C16.9899 18.1973 17.4605 18.0013 18.0092 18C18.5579 17.9987 19.0289 18.1947 19.4222 18.588C19.8155 18.9813 20.0112 19.452 20.0092 20C20.0072 20.548 19.8116 21.019 19.4222 21.413C19.0329 21.807 18.5619 22.0027 18.0092 22ZM6.20922 4H20.9592C21.3426 4 21.6342 4.171 21.8342 4.513C22.0342 4.855 22.0425 5.20067 21.8592 5.55L18.3092 11.95C18.1259 12.2833 17.8802 12.5417 17.5722 12.725C17.2642 12.9083 16.9265 13 16.5592 13H9.10922L8.00922 15H20.0092V17H8.00922C7.25922 17 6.69255 16.671 6.30922 16.013C5.92588 15.355 5.90922 14.7007 6.25922 14.05L7.60922 11.6L4.00922 4H2.00922V2H5.25922L6.20922 4Z"
-                />
-              </svg>
+              <span class="fa-solid fa-cart-shopping fa-lg"></span>
             </button>
           </section>
           <section>
@@ -226,32 +188,13 @@
             ></meter>
             <div>70% recomanda produsul acesta</div>
             <button title="Adauga la favorite" aria-label="Adauga la favorite">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
-                />
-              </svg>
+              <span class="fa-solid fa-heart fa-lg"></span>
             </button>
             <button
               title="Adauga in cosul meu"
               aria-label="Adauga in cosul meu"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.00922 22C7.45922 22 6.98855 21.8043 6.59722 21.413C6.20588 21.0217 6.00988 20.5507 6.00922 20C6.00855 19.4493 6.20455 18.9787 6.59722 18.588C6.98988 18.1973 7.46055 18.0013 8.00922 18C8.55788 17.9987 9.02888 18.1947 9.42222 18.588C9.81555 18.9813 10.0112 19.452 10.0092 20C10.0072 20.548 9.81155 21.019 9.42222 21.413C9.03288 21.807 8.56188 22.0027 8.00922 22ZM18.0092 22C17.4592 22 16.9886 21.8043 16.5972 21.413C16.2059 21.0217 16.0099 20.5507 16.0092 20C16.0085 19.4493 16.2045 18.9787 16.5972 18.588C16.9899 18.1973 17.4605 18.0013 18.0092 18C18.5579 17.9987 19.0289 18.1947 19.4222 18.588C19.8155 18.9813 20.0112 19.452 20.0092 20C20.0072 20.548 19.8116 21.019 19.4222 21.413C19.0329 21.807 18.5619 22.0027 18.0092 22ZM6.20922 4H20.9592C21.3426 4 21.6342 4.171 21.8342 4.513C22.0342 4.855 22.0425 5.20067 21.8592 5.55L18.3092 11.95C18.1259 12.2833 17.8802 12.5417 17.5722 12.725C17.2642 12.9083 16.9265 13 16.5592 13H9.10922L8.00922 15H20.0092V17H8.00922C7.25922 17 6.69255 16.671 6.30922 16.013C5.92588 15.355 5.90922 14.7007 6.25922 14.05L7.60922 11.6L4.00922 4H2.00922V2H5.25922L6.20922 4Z"
-                />
-              </svg>
+              <span class="fa-solid fa-cart-shopping fa-lg"></span>
             </button>
           </section>
           <section>
@@ -281,32 +224,13 @@
             ></meter>
             <div>90% recomanda produsul acesta</div>
             <button title="Adauga la favorite" aria-label="Adauga la favorite">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
-                />
-              </svg>
+              <span class="fa-solid fa-heart fa-lg"></span>
             </button>
             <button
               title="Adauga in cosul meu"
               aria-label="Adauga in cosul meu"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.00922 22C7.45922 22 6.98855 21.8043 6.59722 21.413C6.20588 21.0217 6.00988 20.5507 6.00922 20C6.00855 19.4493 6.20455 18.9787 6.59722 18.588C6.98988 18.1973 7.46055 18.0013 8.00922 18C8.55788 17.9987 9.02888 18.1947 9.42222 18.588C9.81555 18.9813 10.0112 19.452 10.0092 20C10.0072 20.548 9.81155 21.019 9.42222 21.413C9.03288 21.807 8.56188 22.0027 8.00922 22ZM18.0092 22C17.4592 22 16.9886 21.8043 16.5972 21.413C16.2059 21.0217 16.0099 20.5507 16.0092 20C16.0085 19.4493 16.2045 18.9787 16.5972 18.588C16.9899 18.1973 17.4605 18.0013 18.0092 18C18.5579 17.9987 19.0289 18.1947 19.4222 18.588C19.8155 18.9813 20.0112 19.452 20.0092 20C20.0072 20.548 19.8116 21.019 19.4222 21.413C19.0329 21.807 18.5619 22.0027 18.0092 22ZM6.20922 4H20.9592C21.3426 4 21.6342 4.171 21.8342 4.513C22.0342 4.855 22.0425 5.20067 21.8592 5.55L18.3092 11.95C18.1259 12.2833 17.8802 12.5417 17.5722 12.725C17.2642 12.9083 16.9265 13 16.5592 13H9.10922L8.00922 15H20.0092V17H8.00922C7.25922 17 6.69255 16.671 6.30922 16.013C5.92588 15.355 5.90922 14.7007 6.25922 14.05L7.60922 11.6L4.00922 4H2.00922V2H5.25922L6.20922 4Z"
-                />
-              </svg>
+              <span class="fa-solid fa-cart-shopping fa-lg"></span>
             </button>
           </section>
         </div>
@@ -333,32 +257,13 @@
             ></meter>
             <div>100% recomanda produsul acesta</div>
             <button title="Adauga la favorite" aria-label="Adauga la favorite">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
-                />
-              </svg>
+              <span class="fa-solid fa-heart fa-lg"></span>
             </button>
             <button
               title="Adauga in cosul meu"
               aria-label="Adauga in cosul meu"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.00922 22C7.45922 22 6.98855 21.8043 6.59722 21.413C6.20588 21.0217 6.00988 20.5507 6.00922 20C6.00855 19.4493 6.20455 18.9787 6.59722 18.588C6.98988 18.1973 7.46055 18.0013 8.00922 18C8.55788 17.9987 9.02888 18.1947 9.42222 18.588C9.81555 18.9813 10.0112 19.452 10.0092 20C10.0072 20.548 9.81155 21.019 9.42222 21.413C9.03288 21.807 8.56188 22.0027 8.00922 22ZM18.0092 22C17.4592 22 16.9886 21.8043 16.5972 21.413C16.2059 21.0217 16.0099 20.5507 16.0092 20C16.0085 19.4493 16.2045 18.9787 16.5972 18.588C16.9899 18.1973 17.4605 18.0013 18.0092 18C18.5579 17.9987 19.0289 18.1947 19.4222 18.588C19.8155 18.9813 20.0112 19.452 20.0092 20C20.0072 20.548 19.8116 21.019 19.4222 21.413C19.0329 21.807 18.5619 22.0027 18.0092 22ZM6.20922 4H20.9592C21.3426 4 21.6342 4.171 21.8342 4.513C22.0342 4.855 22.0425 5.20067 21.8592 5.55L18.3092 11.95C18.1259 12.2833 17.8802 12.5417 17.5722 12.725C17.2642 12.9083 16.9265 13 16.5592 13H9.10922L8.00922 15H20.0092V17H8.00922C7.25922 17 6.69255 16.671 6.30922 16.013C5.92588 15.355 5.90922 14.7007 6.25922 14.05L7.60922 11.6L4.00922 4H2.00922V2H5.25922L6.20922 4Z"
-                />
-              </svg>
+              <span class="fa-solid fa-cart-shopping fa-lg"></span>
             </button>
           </section>
           <section>
@@ -382,32 +287,13 @@
             ></meter>
             <div>70% recomanda produsul acesta</div>
             <button title="Adauga la favorite" aria-label="Adauga la favorite">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
-                />
-              </svg>
+              <span class="fa-solid fa-heart fa-lg"></span>
             </button>
             <button
               title="Adauga in cosul meu"
               aria-label="Adauga in cosul meu"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.00922 22C7.45922 22 6.98855 21.8043 6.59722 21.413C6.20588 21.0217 6.00988 20.5507 6.00922 20C6.00855 19.4493 6.20455 18.9787 6.59722 18.588C6.98988 18.1973 7.46055 18.0013 8.00922 18C8.55788 17.9987 9.02888 18.1947 9.42222 18.588C9.81555 18.9813 10.0112 19.452 10.0092 20C10.0072 20.548 9.81155 21.019 9.42222 21.413C9.03288 21.807 8.56188 22.0027 8.00922 22ZM18.0092 22C17.4592 22 16.9886 21.8043 16.5972 21.413C16.2059 21.0217 16.0099 20.5507 16.0092 20C16.0085 19.4493 16.2045 18.9787 16.5972 18.588C16.9899 18.1973 17.4605 18.0013 18.0092 18C18.5579 17.9987 19.0289 18.1947 19.4222 18.588C19.8155 18.9813 20.0112 19.452 20.0092 20C20.0072 20.548 19.8116 21.019 19.4222 21.413C19.0329 21.807 18.5619 22.0027 18.0092 22ZM6.20922 4H20.9592C21.3426 4 21.6342 4.171 21.8342 4.513C22.0342 4.855 22.0425 5.20067 21.8592 5.55L18.3092 11.95C18.1259 12.2833 17.8802 12.5417 17.5722 12.725C17.2642 12.9083 16.9265 13 16.5592 13H9.10922L8.00922 15H20.0092V17H8.00922C7.25922 17 6.69255 16.671 6.30922 16.013C5.92588 15.355 5.90922 14.7007 6.25922 14.05L7.60922 11.6L4.00922 4H2.00922V2H5.25922L6.20922 4Z"
-                />
-              </svg>
+              <span class="fa-solid fa-cart-shopping fa-lg"></span>
             </button>
           </section>
           <section>
@@ -437,32 +323,13 @@
             ></meter>
             <div>90% recomanda produsul acesta</div>
             <button title="Adauga la favorite" aria-label="Adauga la favorite">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
-                />
-              </svg>
+              <span class="fa-solid fa-heart fa-lg"></span>
             </button>
             <button
               title="Adauga in cosul meu"
               aria-label="Adauga in cosul meu"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.00922 22C7.45922 22 6.98855 21.8043 6.59722 21.413C6.20588 21.0217 6.00988 20.5507 6.00922 20C6.00855 19.4493 6.20455 18.9787 6.59722 18.588C6.98988 18.1973 7.46055 18.0013 8.00922 18C8.55788 17.9987 9.02888 18.1947 9.42222 18.588C9.81555 18.9813 10.0112 19.452 10.0092 20C10.0072 20.548 9.81155 21.019 9.42222 21.413C9.03288 21.807 8.56188 22.0027 8.00922 22ZM18.0092 22C17.4592 22 16.9886 21.8043 16.5972 21.413C16.2059 21.0217 16.0099 20.5507 16.0092 20C16.0085 19.4493 16.2045 18.9787 16.5972 18.588C16.9899 18.1973 17.4605 18.0013 18.0092 18C18.5579 17.9987 19.0289 18.1947 19.4222 18.588C19.8155 18.9813 20.0112 19.452 20.0092 20C20.0072 20.548 19.8116 21.019 19.4222 21.413C19.0329 21.807 18.5619 22.0027 18.0092 22ZM6.20922 4H20.9592C21.3426 4 21.6342 4.171 21.8342 4.513C22.0342 4.855 22.0425 5.20067 21.8592 5.55L18.3092 11.95C18.1259 12.2833 17.8802 12.5417 17.5722 12.725C17.2642 12.9083 16.9265 13 16.5592 13H9.10922L8.00922 15H20.0092V17H8.00922C7.25922 17 6.69255 16.671 6.30922 16.013C5.92588 15.355 5.90922 14.7007 6.25922 14.05L7.60922 11.6L4.00922 4H2.00922V2H5.25922L6.20922 4Z"
-                />
-              </svg>
+              <span class="fa-solid fa-cart-shopping fa-lg"></span>
             </button>
           </section>
         </div>
@@ -489,32 +356,13 @@
             ></meter>
             <div>100% recomanda produsul acesta</div>
             <button title="Adauga la favorite" aria-label="Adauga la favorite">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
-                />
-              </svg>
+              <span class="fa-solid fa-heart fa-lg"></span>
             </button>
             <button
               title="Adauga in cosul meu"
               aria-label="Adauga in cosul meu"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.00922 22C7.45922 22 6.98855 21.8043 6.59722 21.413C6.20588 21.0217 6.00988 20.5507 6.00922 20C6.00855 19.4493 6.20455 18.9787 6.59722 18.588C6.98988 18.1973 7.46055 18.0013 8.00922 18C8.55788 17.9987 9.02888 18.1947 9.42222 18.588C9.81555 18.9813 10.0112 19.452 10.0092 20C10.0072 20.548 9.81155 21.019 9.42222 21.413C9.03288 21.807 8.56188 22.0027 8.00922 22ZM18.0092 22C17.4592 22 16.9886 21.8043 16.5972 21.413C16.2059 21.0217 16.0099 20.5507 16.0092 20C16.0085 19.4493 16.2045 18.9787 16.5972 18.588C16.9899 18.1973 17.4605 18.0013 18.0092 18C18.5579 17.9987 19.0289 18.1947 19.4222 18.588C19.8155 18.9813 20.0112 19.452 20.0092 20C20.0072 20.548 19.8116 21.019 19.4222 21.413C19.0329 21.807 18.5619 22.0027 18.0092 22ZM6.20922 4H20.9592C21.3426 4 21.6342 4.171 21.8342 4.513C22.0342 4.855 22.0425 5.20067 21.8592 5.55L18.3092 11.95C18.1259 12.2833 17.8802 12.5417 17.5722 12.725C17.2642 12.9083 16.9265 13 16.5592 13H9.10922L8.00922 15H20.0092V17H8.00922C7.25922 17 6.69255 16.671 6.30922 16.013C5.92588 15.355 5.90922 14.7007 6.25922 14.05L7.60922 11.6L4.00922 4H2.00922V2H5.25922L6.20922 4Z"
-                />
-              </svg>
+              <span class="fa-solid fa-cart-shopping fa-lg"></span>
             </button>
           </section>
           <section>
@@ -538,32 +386,13 @@
             ></meter>
             <div>70% recomanda produsul acesta</div>
             <button title="Adauga la favorite" aria-label="Adauga la favorite">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
-                />
-              </svg>
+              <span class="fa-solid fa-heart fa-lg"></span>
             </button>
             <button
               title="Adauga in cosul meu"
               aria-label="Adauga in cosul meu"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.00922 22C7.45922 22 6.98855 21.8043 6.59722 21.413C6.20588 21.0217 6.00988 20.5507 6.00922 20C6.00855 19.4493 6.20455 18.9787 6.59722 18.588C6.98988 18.1973 7.46055 18.0013 8.00922 18C8.55788 17.9987 9.02888 18.1947 9.42222 18.588C9.81555 18.9813 10.0112 19.452 10.0092 20C10.0072 20.548 9.81155 21.019 9.42222 21.413C9.03288 21.807 8.56188 22.0027 8.00922 22ZM18.0092 22C17.4592 22 16.9886 21.8043 16.5972 21.413C16.2059 21.0217 16.0099 20.5507 16.0092 20C16.0085 19.4493 16.2045 18.9787 16.5972 18.588C16.9899 18.1973 17.4605 18.0013 18.0092 18C18.5579 17.9987 19.0289 18.1947 19.4222 18.588C19.8155 18.9813 20.0112 19.452 20.0092 20C20.0072 20.548 19.8116 21.019 19.4222 21.413C19.0329 21.807 18.5619 22.0027 18.0092 22ZM6.20922 4H20.9592C21.3426 4 21.6342 4.171 21.8342 4.513C22.0342 4.855 22.0425 5.20067 21.8592 5.55L18.3092 11.95C18.1259 12.2833 17.8802 12.5417 17.5722 12.725C17.2642 12.9083 16.9265 13 16.5592 13H9.10922L8.00922 15H20.0092V17H8.00922C7.25922 17 6.69255 16.671 6.30922 16.013C5.92588 15.355 5.90922 14.7007 6.25922 14.05L7.60922 11.6L4.00922 4H2.00922V2H5.25922L6.20922 4Z"
-                />
-              </svg>
+              <span class="fa-solid fa-cart-shopping fa-lg"></span>
             </button>
           </section>
           <section>
@@ -593,32 +422,13 @@
             ></meter>
             <div>90% recomanda produsul acesta</div>
             <button title="Adauga la favorite" aria-label="Adauga la favorite">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
-                />
-              </svg>
+              <span class="fa-solid fa-heart fa-lg"></span>
             </button>
             <button
               title="Adauga in cosul meu"
               aria-label="Adauga in cosul meu"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.00922 22C7.45922 22 6.98855 21.8043 6.59722 21.413C6.20588 21.0217 6.00988 20.5507 6.00922 20C6.00855 19.4493 6.20455 18.9787 6.59722 18.588C6.98988 18.1973 7.46055 18.0013 8.00922 18C8.55788 17.9987 9.02888 18.1947 9.42222 18.588C9.81555 18.9813 10.0112 19.452 10.0092 20C10.0072 20.548 9.81155 21.019 9.42222 21.413C9.03288 21.807 8.56188 22.0027 8.00922 22ZM18.0092 22C17.4592 22 16.9886 21.8043 16.5972 21.413C16.2059 21.0217 16.0099 20.5507 16.0092 20C16.0085 19.4493 16.2045 18.9787 16.5972 18.588C16.9899 18.1973 17.4605 18.0013 18.0092 18C18.5579 17.9987 19.0289 18.1947 19.4222 18.588C19.8155 18.9813 20.0112 19.452 20.0092 20C20.0072 20.548 19.8116 21.019 19.4222 21.413C19.0329 21.807 18.5619 22.0027 18.0092 22ZM6.20922 4H20.9592C21.3426 4 21.6342 4.171 21.8342 4.513C22.0342 4.855 22.0425 5.20067 21.8592 5.55L18.3092 11.95C18.1259 12.2833 17.8802 12.5417 17.5722 12.725C17.2642 12.9083 16.9265 13 16.5592 13H9.10922L8.00922 15H20.0092V17H8.00922C7.25922 17 6.69255 16.671 6.30922 16.013C5.92588 15.355 5.90922 14.7007 6.25922 14.05L7.60922 11.6L4.00922 4H2.00922V2H5.25922L6.20922 4Z"
-                />
-              </svg>
+              <span class="fa-solid fa-cart-shopping fa-lg"></span>
             </button>
           </section>
         </div>
@@ -640,13 +450,13 @@
                   >
                     <img
                       srcset="
-                        resurse/imagini/carousel/black-friday-2025-640w.png   640w,
+                        resurse/imagini/carousel/black-friday-2025-1440w.png 1440w,
                         resurse/imagini/carousel/black-friday-2025-920w.png   920w,
-                        resurse/imagini/carousel/black-friday-2025-1440w.png 1440w
+                        resurse/imagini/carousel/black-friday-2025-480w.png   480w
                       "
-                      sizes="(max-width:500px) 320px,
-                (min-width:501px) and (max-width:920px) 480px,
-                820px"
+                      sizes="(min-width:960px) 820px,
+                            (min-width:513px) 480px,
+                            300px"
                       src="resurse/imagini/carousel/black-friday-2025-1440w.png"
                       title="Campanie black friday"
                     />
@@ -660,23 +470,14 @@
                   aria-label="descarca imaginea"
                   href="resurse/imagini/carousel/black-friday-2025-1440w.png"
                   download="campanie-black-friday-2025.png"
-                  ><svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18.0654 8.69639H15.9643V2.08925C15.9643 1.36247 15.3696 0.767822 14.6429 0.767822H9.35714C8.63036 0.767822 8.03571 1.36247 8.03571 2.08925V8.69639H5.93464C4.75857 8.69639 4.16393 10.1235 4.99643 10.956L11.0618 17.0214C11.5771 17.5368 12.4096 17.5368 12.925 17.0214L18.9904 10.956C19.8229 10.1235 19.2414 8.69639 18.0654 8.69639ZM2.75 21.9107C2.75 22.6375 3.34464 23.2321 4.07143 23.2321H19.9286C20.6554 23.2321 21.25 22.6375 21.25 21.9107C21.25 21.1839 20.6554 20.5893 19.9286 20.5893H4.07143C3.34464 20.5893 2.75 21.1839 2.75 21.9107Z"
-                    />
-                  </svg>
+                  ><i class="fa-solid fa-download fa-lg fa-bounce"></i>
                 </a>
               </div>
 
               <p>
                 Nu rata ofertele de Black Friday! Reduceri de până la
-                <s>20%</s> <strong><ins>30%</ins></strong> la telefoane,
-                laptopuri și gadgeturi.
+                <s>20%</s> <strong><ins>30%</ins></strong> la <b>telefoane</b>,
+                <b>laptopuri</b> și <b>gadgeturi</b>.
               </p>
             </li>
             <li>
@@ -689,8 +490,9 @@
                 >23 Decembrie 2025 ora 20:00</time
               ><br />
               <p>
-                Bucurate de ofertele de craciun la tablete. Cumpara o tableta de
-                minimum 3000 de lei si primesti gratuit o pereche de casti.
+                Bucurate de ofertele de craciun la <b>tablete</b>. Cumpara o
+                <b>tableta</b> de minimum 3000 de lei si primesti gratuit o
+                pereche de <b>casti</b>.
               </p>
             </li>
           </ol>
@@ -903,8 +705,9 @@
               <time datetime="2025-09-01">1 septembrie 2025</time> -
               <time datetime="2025-09-15">15 septembrie 2025</time><br />
               <p>
-                Oferte pentru studenți și elevi: laptopuri, tablete și
-                gadget-uri la prețuri speciale pentru începutul anului școlar.
+                Oferte pentru studenți și elevi: <b>laptopuri</b>,
+                <b>tablete</b> și <b>gadget-uri</b> la prețuri speciale pentru
+                începutul anului școlar.
               </p>
             </li>
             <li>
@@ -939,8 +742,9 @@
           <h3>Despre noi</h3>
           <p>
             eSHOP.ro este un magazin dedicat pasionaților de tehnologie, oferind
-            o gamă completă de produse electronice moderne — telefoane mobile,
-            laptopuri, tablete și gadgeturi — la prețuri competitive.
+            o gamă completă de produse electronice moderne —
+            <b>telefoane mobile</b>, <b>laptopuri</b>, <b>tablete</b> și
+            <b>gadgeturi</b> — la prețuri competitive.
           </p>
           <p>
             Scopul nostru este să punem la dispoziția clienților cele mai noi
@@ -1045,7 +849,7 @@
           </details>
 
           <details>
-            <summary>Ce se întâmplă dacă primi produsul defect?</summary>
+            <summary>Ce se întâmplă dacă primim produsul defect?</summary>
             <p>
               Dacă primești un produs defect, te rugăm să ne contactezi imediat
               și să nu încercați reparații neautorizate. Vom analiza cazul, iar

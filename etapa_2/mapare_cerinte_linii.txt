@@ -1,27 +1,22 @@
-1. implicit
-2. 6-13
-3. 13
-4. 18-32
-5. header 45, main 159, footer 924
-6. section 160 imbricat 163, aside 742 
-7. 1064 
-8. h1 46 nav 59, 101
-9. blockquote 812, p 942
-10. 628
-11. 638
-12. f.abbr 139, b.138,657 e.680 i.814 c.680 
-13. a.749 b.820 c.927 d.639 e.661
-14. 775
-15. 1071
-16. 975 
-17. 172, 221
-18. 1236
-19. 1263
-20. -
+Task schema cromatica:
+
+Task layout:
+
+Task design rudimentar:
+a. (media query index.scss)
+b. grid gap
+c. izolare header,footer,zone grid
+d. padding inauntul
+e.
+
+Task iconuri:
+
+Task stilizare tabel:
+
+Task stilizare-taburi:
+
+Task Link top:
+
 
 Bonusuri:
-1. Nu am gasit ceva relevant :(
-2. 891
-3. 708
-4. 1244
-5. 876 
+1. css reset
