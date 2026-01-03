@@ -1,0 +1,8 @@
+Task meniu:
+
+Stil printare:
+
+Bonusuri (hamburger Icon):
+1. 3 div-uri / span-uri
+2. animatie care sa: schimbe culoarea barelor, efectueze o transformare geometrica, schimbe opacitatea
+3. animation delay generate cu for in sass 
