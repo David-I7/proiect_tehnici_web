@@ -1,0 +1,273 @@
+@use "./variables" as *;
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: unset;
+  font-style: initial;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+image {
+  max-width: 100%;
+}
+
+/* CUSTOM CSS */
+
+html {
+  font-size: var(--fs-root);
+}
+
+body {
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body-m);
+  font-family: var(--ff-body);
+  line-height: var(--lh-body);
+  color: var(--on-surface);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-headings);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-headings);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+p {
+  margin-bottom: var(--ps);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+small {
+  color: var(--on-surface-variant);
+}
+
+header,
+footer {
+  background-color: var(--surface-high);
+}
+
+header,
+footer,
+section,
+aside,
+article {
+  padding-block: 1.5rem;
+}
+
+footer {
+  padding-bottom: 1rem;
+}
+
+main {
+  background-color: var(--surface);
+}
+
+// Components
+// Navigation
+.primary-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  &-right {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--surface-low);
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 2rem;
+  height: 40px;
+  max-width: 50rem;
+  flex: 1 1 0px;
+
+  &:hover {
+    cursor: text;
+  }
+
+  &:focus-within {
+    outline: 2px solid var(--primary);
+  }
+
+  input {
+    outline: none;
+    width: 100%;
+  }
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  display: none;
+
+  input {
+    appearance: none;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+  }
+
+  @for $i from 0 through 2 {
+    div:nth-of-type(#{$i + 1}) {
+      position: absolute;
+      top: 8px + 8px * $i;
+      left: 50%;
+      transform: translateX(-50%) scaleX(0.5);
+      height: 4px;
+      width: 20px;
+      background-color: var(--on-surface);
+      border-radius: 1rem;
+      opacity: 0;
+    }
+  }
+}
+
+/* === ANIMAȚIE CU MINIM 3 KEYFRAMES === */
+@keyframes appear-bar {
+  0% {
+    opacity: 0;
+    background-color: var(--on-surface);
+    transform: translateX(-50%) scaleX(0.5) rotate(0deg);
+  }
+
+  50% {
+    opacity: 0.5;
+    background-color: var(--primary);
+    transform: translateX(-50%) scaleX(1) rotate(10deg);
+  }
+
+  100% {
+    opacity: 1;
+    background-color: var(--on-surface);
+    transform: translateX(-50%) scaleX(1) rotate(0deg);
+  }
+}
+
+/* UTILITY CLASSES */
+
+.off-screen {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  top: -1px;
+  left: -1px;
+}
+
+.icon-button {
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-content: center;
+  border-radius: 1rem;
+}
+
+/* MOBILE */
+@media screen and (max-width: $mobile-breakpoint) {
+  header,
+  footer {
+    padding-inline: var(--page-pad-s);
+  }
+  main > section {
+    padding-inline: var(--page-pad-s);
+  }
+
+  .hamburger-menu {
+    display: block;
+
+    div {
+      animation: appear-bar $an-duration-slow ease forwards;
+    }
+
+    /* Delay-uri generate cu for */
+    @for $i from 1 through 3 {
+      div:nth-of-type(#{$i}) {
+        animation-delay: ($i - 1) * 300ms;
+      }
+    }
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: calc($mobile-breakpoint + 1px)) and (max-width: $tablet-breakpoint) {
+  header,
+  footer {
+    padding-inline: var(--page-pad-m);
+  }
+  main > section {
+    padding-inline: var(--page-pad-m);
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: calc($tablet-breakpoint + 1px)) {
+  header,
+  footer {
+    padding-inline: var(--page-pad-l);
+  }
+  main > section {
+    padding-inline: var(--page-pad-l);
+  }
+}

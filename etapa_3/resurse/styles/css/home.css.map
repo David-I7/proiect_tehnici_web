@@ -1,0 +1,1 @@
+{"version":3,"sources":["..\\scss\\home.scss","home.css"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF","file":"home.css","sourcesContent":["main > section:nth-last-of-type {\r\n  overflow: hidden;\r\n}\r\n","main > section:nth-last-of-type {\n  overflow: hidden;\n}"]}
